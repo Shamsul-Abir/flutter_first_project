@@ -126,7 +126,7 @@ class FlutterClass3 extends StatelessWidget {
               )),
             ),
 
-            //34 minutes 23 seconds in the ostad class video while practicing
+            //17 minutes 41 seconds in the ostad class video while practicing
           ],
         ),
       ),
