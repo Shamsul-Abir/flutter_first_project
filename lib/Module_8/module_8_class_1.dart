@@ -154,6 +154,7 @@ class module8class1 extends StatelessWidget {
           //   child: Text('I\'m card'),
           // card used in the clear button ^
           // )
+          SizedBox(height: 10,)
 
         ],
       ),
