@@ -125,7 +125,7 @@ class module8class1 extends StatelessWidget {
             alignment: Alignment.center, //to maintain alignment of
             // container's text correctly ^
 
-            height: 50,
+            height: 70,
             width: 220,
             //this will show the containers exact size
             decoration: BoxDecoration(
