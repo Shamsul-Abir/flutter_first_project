@@ -32,7 +32,6 @@ class Module8Class2 extends StatelessWidget {
               ),
               SizedBox(height: 30,),
               Image.asset('asset/youtube.png',
-        
               width: 250,
               ),
               SizedBox(height: 10,),
@@ -113,12 +112,10 @@ class Module8Class2 extends StatelessWidget {
                           ),
                           onPressed: (){
                             if(_formKey.currentState!.validate()){
-
                               //Last in First Out (Lifo)
                               //to switch to another page - from Login to ListV page switch
                               Navigator.push(context, MaterialPageRoute(builder: (context)=> ListV(name: phoneController.text,)));
-                              // Navigator.push(context, MaterialPageRoute(builder: (context)=> ListV()));  - for practice only
-
+                              // Navigator.push(context, MaterialPageRoute(builder: (context)=> ListV())); - for practice only
 
                               //Alternative way
                               // // ScaffoldMessenger.of(context).showSnackBar(
