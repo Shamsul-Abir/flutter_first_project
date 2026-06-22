@@ -3,6 +3,7 @@
 import 'package:first_flutter_project/Module_8/list_view.dart';
 import 'package:first_flutter_project/Module_8/module_8_class_3.dart';
 import 'package:first_flutter_project/Module_9/module_9_class_1.dart';
+import 'package:first_flutter_project/Module_9/module_9_class_2.dart';
 import 'package:first_flutter_project/flutter_class3.dart';
 import 'package:first_flutter_project/home.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'Module_8/module_8_class_1.dart';
 import 'Module_8/module_8_class_2.dart';
 import 'Module_8/module_8_stack.dart';
+import 'Module_9/widgets/own_widget.dart';
 
 class MyApp extends StatelessWidget{ //the page doesn't get updated is statelessWidget
   //when a page gets updated is named as StatefullWidget
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget{ //the page doesn't get updated is stateless
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'This is a Practice Project',
-      home: Alert(), //home is connected from home.dart
+      home: ownWidget(), //home is connected from home.dart
       // home: Text('Hello World'), //home is connected from home.dart
     );
   }
