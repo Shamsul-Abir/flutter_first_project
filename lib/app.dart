@@ -24,20 +24,69 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor:  Colors.purple,
+        primarySwatch: Colors.purple,
+        scaffoldBackgroundColor: Colors.grey.shade100,
+        appBarTheme: AppBarTheme(
+          color: Colors.orange,
+          titleTextStyle: TextStyle(
+            fontSize: 30
+          )
+        ),
+
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.deepOrange,
+            foregroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(7)
+            )
+          )
+        ),
+
+          textTheme: TextTheme(
+          headlineLarge:  TextStyle(
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
+            color: Colors.deepPurple
+          )
+      ),
+
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.deepPurple,
+              width: 1,
+            )
+          ),
+          hintStyle: TextStyle(
+            color: Colors.deepPurple,
+          ),
+
+          labelStyle: TextStyle(
+            color: Colors.deepPurple
+          )
+        )
+      ),
+
       title: 'This is a Practice Project',
 
       //while working on materials - this process hot reload will not gonna work
       //totally to have to run manually
+      // initialRoute: '/module_9_class_3',
       initialRoute: '/module_9_class_3',
       routes: {
-        '/': (context) => FlutterClass3(),
+        '/home': (context) => FlutterClass3(),
         '/module_9_class_1': (context) => Alert(),
         '/lastClass': (context) => ownWidget(),
         '/module_9_class_3': (context) => module9class3(),
       },
       //this will go to TravelHomeScreen page by using '/' this sign
 
-      // home: module_9_class_3(),
+      // home: module9class3(),
       //home is connected from home.dart
       // home: Text('Hello World'), //home is connected from home.dart
     );

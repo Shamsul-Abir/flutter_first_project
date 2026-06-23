@@ -1,6 +1,10 @@
+import 'package:first_flutter_project/Module_8/module_8_class_1.dart';
+import 'package:first_flutter_project/Module_9/module_9_class_2.dart';
 import 'package:flutter/material.dart';
 
 import '../Module_8/assignment.dart';
+import '../Module_8/module_8_class_3.dart';
+import '../Module_8/module_8_stack.dart';
 
 class module9class3 extends StatelessWidget {
   const module9class3({super.key});
@@ -13,9 +17,11 @@ class module9class3 extends StatelessWidget {
           'Class 3',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.blue,
+        //app bar color changed in app.dart => appbar theme
       ),
 
+      //elevated button color style changed in app.dart before the
+      //title of the app
       body: Column(
         children: [
           ElevatedButton(
@@ -43,7 +49,7 @@ class module9class3 extends StatelessWidget {
                 context,
                 PageRouteBuilder(
                   pageBuilder: (context, animation, secondaryAnimation) =>
-                      TravelHomeScreen(),
+                      Module8Stack(),
                   transitionsBuilder:
                       (context, animation, secondaruAnimation, child) {
                         const begin = Offset(1.0, 0);
@@ -64,10 +70,31 @@ class module9class3 extends StatelessWidget {
             },
             child: Text('Travel 2'),
           ),
+
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Module8Clss3()));
+            },
+            child: Text('Grid View'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> module8class1()));
+            },
+            child: Text('Class 1'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> module_9_class_2()));
+            },
+            child: Text('Class 2'),
+          ),
+          TextField(),
+          Text('Class-3',style: Theme.of(context).textTheme.headlineLarge,)
         ],
       ),
     );
   }
 }
 
-//module 9 class 3 - 37 Minutes must be rechecked
+//module 9 class 3 - 58.17 Minutes must be rechecked
