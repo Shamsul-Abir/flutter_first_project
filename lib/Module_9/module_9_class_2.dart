@@ -36,7 +36,7 @@ class module_9_class_2 extends StatelessWidget {
                 child: Text('Home', style: TextStyle(color: Colors.white)),
               ),
               Tab(
-                icon: Icon(Icons.star, color: Colors.white),
+                icon: Icon(Icons.star, color: Colors.orangeAccent),
                 child: Text(
                   'Favourites',
                   style: TextStyle(color: Colors.white),
