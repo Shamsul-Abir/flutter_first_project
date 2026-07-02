@@ -9,6 +9,7 @@ import 'package:first_flutter_project/flutter_class3.dart';
 import 'package:first_flutter_project/home.dart';
 import 'package:flutter/material.dart';
 
+import 'Module_11/module_11_class_2/calulator.dart';
 import 'Module_8/assignment.dart';
 import 'Module_8/module_8_class_1.dart';
 import 'Module_8/module_8_class_2.dart';
@@ -78,7 +79,7 @@ class MyApp extends StatelessWidget {
       //while working on materials - this process hot reload will not gonna work
       //totally to have to run manually
       // initialRoute: '/module_9_class_3',
-      initialRoute: '/counter_app',
+      initialRoute: '/Calculator_App',
       routes: {
         '/home': (context) => FlutterClass3(),
         '/module_9_class_1': (context) => Alert(),
@@ -86,7 +87,8 @@ class MyApp extends StatelessWidget {
         '/module_9_class_3': (context) => module9class3(),
         '/module_9_class_2': (context) => module_9_class_2(),
         '/counter_app': (context) => CounterApp(),
-        '/login_app': (context) => module8class1()
+        '/login_app': (context) => module8class1(),
+        '/Calculator_App': (context) => CalulatorApp()
       },
       //this will go to TravelHomeScreen page by using '/' this sign
 
