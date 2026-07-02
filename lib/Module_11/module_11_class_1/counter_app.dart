@@ -82,7 +82,7 @@ class _CounterAppState extends State<CounterApp> {
                     print(number);
                   });
                 },
-                child: Text('-', style: TextStyle(fontSize: 35)),
+                child: Text('-', style: TextStyle(fontSize: 37)),
               ),
               // Spacer(),  //this will take as much space as possible betweem 2 buttons
               ElevatedButton(
@@ -92,19 +92,26 @@ class _CounterAppState extends State<CounterApp> {
                     print(number);
                   });
                 },
-                child: Text('+', style: TextStyle(fontSize: 35)),
+                child: Text('+', style: TextStyle(fontSize: 37)),
               ),
-              ElevatedButton(onPressed: (){
-                // Navigator.push(context, MaterialPageRoute(builder: (context)=>module9class3()));
 
-                //to show dispose & deactivate, this will not go back and if you use back button
-                //this will directly cuts the program
-                //and to run this method you have to use pushReplacement
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>module9class3()));
-
-              }, child: Text('Class 3'))
             ],
+
           ),
+          SizedBox(height: 50,),
+          ElevatedButton(onPressed: (){
+            // Navigator.push(context, MaterialPageRoute(builder: (context)=>module9class3()));
+
+            //to show dispose & deactivate, this will not go back and if you use back button
+            //this will directly cuts the program
+            //and to run this method you have to use pushReplacement
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>module9class3()));
+
+          },style: ElevatedButton.styleFrom( //this button background color changed
+            backgroundColor: Colors.purple
+          ), child: Text('Class 3',style: TextStyle(
+              color: Colors.white70
+          )))
         ],
       ),
     );
