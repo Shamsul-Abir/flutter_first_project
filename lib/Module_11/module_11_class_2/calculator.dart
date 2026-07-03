@@ -97,7 +97,7 @@ class _CalulatorAppState extends State<CalulatorApp> {
               calculator_button(onClick: () => buttonPress('4'),text:'4'),
               calculator_button(onClick: () => buttonPress('5'),text:'5'),
               calculator_button(onClick: () => buttonPress('6'),text:'6'),
-              calculator_button(onClick: () => buttonPress('*'),text:'*',color: Colors.orange,),
+              calculator_button(onClick: () => buttonPress('*'),text:'*',color: Colors.orange),
             ],
           ),
           Row(
@@ -110,7 +110,7 @@ class _CalulatorAppState extends State<CalulatorApp> {
           ),
           Row(
             children: [
-              calculator_button(onClick: () => buttonPress('C'),text:'C'),
+              calculator_button(onClick: () => buttonPress('C'),text:'C',color: Colors.white),
               calculator_button(onClick: () => buttonPress('0'),text:'0'),
               calculator_button(onClick: () => buttonPress('='),text:'='),
               calculator_button(onClick: () => buttonPress('+'),text:'+',color: Colors.orange,),

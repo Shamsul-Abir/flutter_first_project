@@ -29,8 +29,8 @@ class calculator_button extends StatelessWidget {
             onPressed: onClick,
             child: Text(text,
               style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.white
+                  fontSize: 32,
+                  color: Colors.black87
               ),
             )),
       ),
