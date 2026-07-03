@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class calculator_button extends StatelessWidget {
   String text;
-  Color ? color;
+  Color ? color;  //if user does give any color it will automatically take grey color
   final VoidCallback onClick;
 
   calculator_button({
@@ -14,24 +14,26 @@ class calculator_button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
 
-              padding: EdgeInsets.all(24),
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)
-              ),
-              backgroundColor: Colors.grey[800]
-          ),
-          onPressed: (){},
-          child: Text('1',
-            style: TextStyle(
-                fontSize: 30,
-                color: Colors.white
+                padding: EdgeInsets.all(24),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)
+                ),
+                backgroundColor: color ?? Colors.grey[800]
             ),
-          )),
+            onPressed: onClick,
+            child: Text(text,
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.white
+              ),
+            )),
+      ),
     );
   }
 }

@@ -9,7 +9,7 @@ import 'package:first_flutter_project/flutter_class3.dart';
 import 'package:first_flutter_project/home.dart';
 import 'package:flutter/material.dart';
 
-import 'Module_11/module_11_class_2/calulator.dart';
+import 'Module_11/module_11_class_2/calculator.dart';
 import 'Module_8/assignment.dart';
 import 'Module_8/module_8_class_1.dart';
 import 'Module_8/module_8_class_2.dart';
