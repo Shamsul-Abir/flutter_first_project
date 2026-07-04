@@ -1,14 +1,14 @@
 import 'package:first_flutter_project/Module_11/module_11_class_2/widget/calculator_button.dart';
 import 'package:flutter/material.dart';
 
-class CalulatorApp extends StatefulWidget {
-  const CalulatorApp({super.key});
+class CalculatorApp extends StatefulWidget {
+  const CalculatorApp({super.key});
 
   @override
-  State<CalulatorApp> createState() => _CalulatorAppState();
+  State<CalculatorApp> createState() => _CalculatorAppState();
 }
 
-class _CalulatorAppState extends State<CalulatorApp> {
+class _CalculatorAppState extends State<CalculatorApp> {
   String _output = '0';
   String _input = '0';
   String _ope = '0';
@@ -67,7 +67,7 @@ class _CalulatorAppState extends State<CalulatorApp> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   if(_ope.isNotEmpty && _input.isNotEmpty)
-                    //additional line to show user input of calcualtion
+                    //additional line to show user input of calculation
                     (_ope.isNotEmpty && _input.isNotEmpty) ? Text('$num1 $_ope $_input',
                     style: TextStyle(
                       fontSize: 24,

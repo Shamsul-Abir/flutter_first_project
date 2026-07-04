@@ -88,7 +88,7 @@ class MyApp extends StatelessWidget {
         '/module_9_class_2': (context) => module_9_class_2(),
         '/counter_app': (context) => CounterApp(),
         '/login_app': (context) => module8class1(),
-        '/Calculator_App': (context) => CalulatorApp()
+        '/Calculator_App': (context) => CalculatorApp()
       },
       //this will go to TravelHomeScreen page by using '/' this sign
 
