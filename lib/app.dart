@@ -10,6 +10,7 @@ import 'package:first_flutter_project/home.dart';
 import 'package:flutter/material.dart';
 
 import 'Module_11/module_11_class_2/calculator.dart';
+import 'Module_11/module_11_class_3/water_tracker.dart';
 import 'Module_8/assignment.dart';
 import 'Module_8/module_8_class_1.dart';
 import 'Module_8/module_8_class_2.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         scaffoldBackgroundColor: Colors.grey.shade100,
         appBarTheme: AppBarTheme(
-          color: Colors.orange,
+          color: Colors.lightBlue,
           titleTextStyle: TextStyle(
             fontSize: 30
           )
@@ -79,7 +80,7 @@ class MyApp extends StatelessWidget {
       //while working on materials - this process hot reload will not gonna work
       //totally to have to run manually
       // initialRoute: '/module_9_class_3',
-      initialRoute: '/Calculator_App',
+      initialRoute: '/water_tracker',
       routes: {
         '/home': (context) => FlutterClass3(),
         '/module_9_class_1': (context) => Alert(),
@@ -88,7 +89,8 @@ class MyApp extends StatelessWidget {
         '/module_9_class_2': (context) => module_9_class_2(),
         '/counter_app': (context) => CounterApp(),
         '/login_app': (context) => module8class1(),
-        '/Calculator_App': (context) => CalculatorApp()
+        '/Calculator_App': (context) => CalculatorApp(),
+        '/water_tracker': (context) => WaterTracker(),
       },
       //this will go to TravelHomeScreen page by using '/' this sign
 
