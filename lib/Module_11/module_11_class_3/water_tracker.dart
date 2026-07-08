@@ -18,12 +18,13 @@ class _WaterTrackerState extends State<WaterTracker> {
   final int goal = 3000;
   Timer ? _time;
 
+
   //to add timer count down every second
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    _time = Timer.periodic(Duration(seconds: 1), (timer){
+    _time = Timer.periodic(Duration(seconds: 60), (timer){
 
       print(timer.tick); //to show time in the terminal
 

@@ -7,6 +7,7 @@ import 'package:first_flutter_project/Module_9/module_9_class_1.dart';
 import 'package:first_flutter_project/Module_9/module_9_class_2.dart';
 import 'package:first_flutter_project/flutter_class3.dart';
 import 'package:first_flutter_project/home.dart';
+import 'package:first_flutter_project/module_12/money_management.dart';
 import 'package:flutter/material.dart';
 
 import 'Module_11/module_11_class_2/calculator.dart';
@@ -33,9 +34,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         scaffoldBackgroundColor: Colors.grey.shade100,
         appBarTheme: AppBarTheme(
-          color: Colors.lightBlue,
+          color: Colors.teal,
           titleTextStyle: TextStyle(
-            fontSize: 30
+            fontSize: 30,
           )
         ),
 
@@ -80,7 +81,7 @@ class MyApp extends StatelessWidget {
       //while working on materials - this process hot reload will not gonna work
       //totally to have to run manually
       // initialRoute: '/module_9_class_3',
-      initialRoute: '/water_tracker',
+      initialRoute: '/money_management',
       routes: {
         '/home': (context) => FlutterClass3(),
         '/module_9_class_1': (context) => Alert(),
@@ -91,6 +92,7 @@ class MyApp extends StatelessWidget {
         '/login_app': (context) => module8class1(),
         '/Calculator_App': (context) => CalculatorApp(),
         '/water_tracker': (context) => WaterTracker(),
+        '/money_management': (context) => MoneyManagement(),
       },
       //this will go to TravelHomeScreen page by using '/' this sign
 
