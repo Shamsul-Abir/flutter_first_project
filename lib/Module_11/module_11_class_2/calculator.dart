@@ -122,7 +122,6 @@ class _CalculatorAppState extends State<CalculatorApp> {
   }
 }
 
-
 // Some Solutions -->
 
 //button text color change code method
