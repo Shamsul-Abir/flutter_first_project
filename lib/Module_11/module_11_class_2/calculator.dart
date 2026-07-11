@@ -100,6 +100,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
               calculator_button(onClick: ()=> buttonPress('*'),color: Colors.orange,text:'*'),
             ],
           ),
+
           Row(
             children: [
               calculator_button(onClick: ()=> buttonPress('1'),text:'1'),
