@@ -111,6 +111,7 @@ class _MoneyManagementState extends State<MoneyManagement> with SingleTickerProv
               controller: titleController,
               decoration: InputDecoration(
                 labelText: 'Title',
+
                 border: OutlineInputBorder(),
               ),
             ),
