@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
       //while working on materials - this process hot reload will not gonna work
       //totally to have to run manually
       // initialRoute: '/module_9_class_3',
-      initialRoute: '/money_management',
+      initialRoute: '/Calculator_App',
       routes: {
         '/home': (context) => FlutterClass3(),
         '/module_9_class_1': (context) => Alert(),
