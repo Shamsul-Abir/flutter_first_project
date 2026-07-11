@@ -100,6 +100,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
               calculator_button(onClick: ()=> buttonPress('*'),color: Colors.orange,text:'*'),
             ],
           ),
+
           Row(
             children: [
               calculator_button(onClick: ()=> buttonPress('1'),text:'1'),
@@ -122,10 +123,9 @@ class _CalculatorAppState extends State<CalculatorApp> {
   }
 }
 
+// Some Solutions ---->
 
-// Some Solutions
-
-//button text color change code method - from Gemini AI
+//button text color change code method
 // Update calculator_button.dartAdd a textColor property to the constructor and apply it to the TextStyle.import 'package:flutter/material.dart';
 //
 // class calculator_button extends StatelessWidget {
