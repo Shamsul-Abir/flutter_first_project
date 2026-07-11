@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class calculator_button extends StatelessWidget {
   String text;
   Color ? color;  //if user does give any color it will automatically take grey color
+  Color ? textColor;
   final VoidCallback onClick;
 
   calculator_button({
@@ -19,7 +20,6 @@ class calculator_button extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-
                 padding: EdgeInsets.all(24),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)
@@ -30,7 +30,7 @@ class calculator_button extends StatelessWidget {
             child: Text(text,
               style: TextStyle(
                   fontSize: 32,
-                  color: color ?? Colors.black87
+                  color: textColor ?? Colors.white
               ),
             )),
       ),

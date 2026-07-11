@@ -86,34 +86,34 @@ class _CalculatorAppState extends State<CalculatorApp> {
           ), //this will show the output
           Row(
             children: [
-              calculator_button(onClick: () => buttonPress('7'),text:'7'),
-              calculator_button(onClick: () => buttonPress('8'),text:'8'),
-              calculator_button(onClick: () => buttonPress('9'),text:'9'),
-              calculator_button(onClick: () => buttonPress('÷'),text:'÷',color: Colors.orange,),
+              calculator_button(onClick: ()=> buttonPress('7'),text:'7'),
+              calculator_button(onClick: ()=> buttonPress('8'),text:'8'),
+              calculator_button(onClick: ()=> buttonPress('9'),text:'9'),
+              calculator_button(onClick: ()=> buttonPress('÷'),text:'÷',color: Colors.orange,)
             ],
           ),
           Row(
             children: [
-              calculator_button(onClick: () => buttonPress('4'),text:'4'),
-              calculator_button(onClick: () => buttonPress('5'),text:'5'),
-              calculator_button(onClick: () => buttonPress('6'),text:'6'),
-              calculator_button(onClick: () => buttonPress('*'),text:'*',color: Colors.orange),
+              calculator_button(onClick: ()=> buttonPress('4'),text:'4'),
+              calculator_button(onClick: ()=> buttonPress('5'),text:'5'),
+              calculator_button(onClick: ()=> buttonPress('6'),text:'6'),
+              calculator_button(onClick: ()=> buttonPress('*'),color: Colors.orange,text:'*'),
             ],
           ),
           Row(
             children: [
-              calculator_button(onClick: () => buttonPress('1'),text:'1'),
-              calculator_button(onClick: () => buttonPress('2'),text:'2'),
-              calculator_button(onClick: () => buttonPress('3'),text:'3'),
-              calculator_button(onClick: () => buttonPress('-'),text:'-',color: Colors.orange,),
+              calculator_button(onClick: ()=> buttonPress('1'),text:'1'),
+              calculator_button(onClick: ()=> buttonPress('2'),text:'2'),
+              calculator_button(onClick: ()=> buttonPress('3'),text:'3'),
+              calculator_button(onClick: ()=> buttonPress('-'),text:'-',color: Colors.orange,),
             ],
           ),
           Row(
             children: [
-              calculator_button(onClick: () => buttonPress('C'),text:'C',color: Colors.white),
-              calculator_button(onClick: () => buttonPress('0'),text:'0'),
-              calculator_button(onClick: () => buttonPress('='),text:'='),
-              calculator_button(onClick: () => buttonPress('+'),text:'+',color: Colors.orange,),
+              calculator_button(onClick: ()=> buttonPress('C'),text:'C',color: Colors.pinkAccent),
+              calculator_button(onClick: ()=> buttonPress('0'),text:'0'),
+              calculator_button(onClick: ()=> buttonPress('='),text:'='),
+              calculator_button(onClick: ()=> buttonPress('+'),text:'+',color: Colors.orange,),
             ],
           ),
         ],
@@ -122,4 +122,71 @@ class _CalculatorAppState extends State<CalculatorApp> {
   }
 }
 
+
+// Some Solutions
+
+//button text color change code method - from Gemini AI
+// Update calculator_button.dartAdd a textColor property to the constructor and apply it to the TextStyle.import 'package:flutter/material.dart';
+//
+// class calculator_button extends StatelessWidget {
+//   final String text;
+//   final Color? color;     // Background color
+//   final Color? textColor; // <--- New property for text color
+//   final VoidCallback onClick;
+//
+//   calculator_button({
+//     super.key,
+//     required this.onClick,
+//     this.color,
+//     this.textColor,      // <--- Add this to constructor
+//     required this.text,
+//   });
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Expanded(
+//       child: Padding(
+//         padding: const EdgeInsets.all(8.0),
+//         child: ElevatedButton(
+//             style: ElevatedButton.styleFrom(
+//                 padding: EdgeInsets.all(24),
+//                 shape: RoundedRectangleBorder(
+//                     borderRadius: BorderRadius.circular(10)
+//                 ),
+//                 backgroundColor: color ?? Colors.grey[800]
+//             ),
+//             onPressed: onClick,
+//             child: Text(
+//               text,
+//               style: TextStyle(
+//                   fontSize: 32,
+//                   // Use textColor if provided, otherwise default to white
+//                   color: textColor ?? Colors.white
+//               ),
+//             )),
+//       ),
+//     );
+//   }
+// }
+
+
+// How to use it in your calculator.dartNow, when you call the widget in your main calculator file, you can pass a specific color for the text:
+// Example of a button with custom text color (e.g., orange text for 'AC')
+
+
+// calculator_button(
+// text: 'AC',
+// textColor: Colors.orange, // Individual text color
+// onClick: () {
+// // your logic
+// },
+// ),
+//
+// // Example of a standard button (will default to white text)
+// calculator_button(
+// text: '7',
+// onClick: () {
+// // your logic
+// },
+// ),
 

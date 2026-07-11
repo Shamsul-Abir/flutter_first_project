@@ -15,7 +15,7 @@ class WaterTracker extends StatefulWidget {
 
 class _WaterTrackerState extends State<WaterTracker> {
   int currentInTake = 0;
-  final int goal = 3000;
+  final int goal = 5000;
   Timer ? _time;
 
 
