@@ -123,7 +123,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
   }
 }
 
-// Some Solutions -->
+// Some Solutions --->
 
 //button text color change code method
 // Update calculator_button.dartAdd a textColor property to the constructor and apply it to the TextStyle.import 'package:flutter/material.dart';
